@@ -1,0 +1,32 @@
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+/* Style the navbar links */
+#navbarAnim {
+  background-color: #333333; /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  z-index: 2;
+  border-bottom: 1px solid grey;
+}
+
+
+#navbar li:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#firstBlock{
+  padding-top: 4em;
+}
+
+#buttonCheck{
+
+}
+
+.navbar{
+
+}
