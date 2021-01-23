@@ -2,9 +2,9 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbarAnim").style.top = "0";
+    document.getElementById("navbarScroller").style.top = "0px";
   } else {
-    document.getElementById("navbarAnim").style.top = "-70px";
+    document.getElementById("navbarScroller").style.top = "-250px";
   }
   prevScrollpos = currentScrollPos;
 }
@@ -12,16 +12,16 @@ window.onscroll = function() {
 $(function()
 {
   var expanded = false;
-  $('#hui').click(function()
+  $('.navbar-toggler').click(function()
                       {
                           if (!expanded)
                           {
-                              $('#firstBlock').animate({'padding-top' : '9em'}, {duration : 175});
+                              $('#Greeting').animate({'padding-top' : '11em'}, {duration : 175});
                               expanded = true;
                           }
                           else
                           {
-                             $('#firstBlock').animate({'padding-top' : '4em'}, {duration: 275});
+                             $('#Greeting').animate({'padding-top' : '0em'}, {duration: 275});
                               expanded = false;
                           }
                       });
