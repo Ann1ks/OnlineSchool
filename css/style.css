@@ -1,10 +1,10 @@
 .navbar {
-  border-bottom: 1px solid #b5b5b5;
   height: 62px;
   position: stick; /* Make it stick/fixed */
   top: 0; /* Stay on top */
   width: 100%; /* Full width */
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  background-color: #d6d6d6;
 }
 
 a.navbar-brand {
@@ -12,7 +12,12 @@ a.navbar-brand {
 }
 
 .collapse {
-
+  margin-left: -1em;
+  margin-right: -1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-size: contain;
+  background-color: #fff;
 }
 
 .img-fluid {
@@ -23,3 +28,14 @@ a.navbar-brand {
 main {
   padding-top: 5em;
 }
+
+.navbarToggler {
+  width: 100%;
+}
+
+
+@media (max-width: 978px) {
+    .btn-outline-info {
+      padding:0.5em;
+      margin-bottom:1em;
+    }
