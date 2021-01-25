@@ -14,7 +14,7 @@ html {
   background-color: #d6d6d6;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   a.navbar-brand {
     width: 200px;
   }
@@ -36,7 +36,7 @@ html {
 }
 
 .img-fluid {
-  max-width: 25%;
+  max-width: 35%;
   height: auto;
 }
 
@@ -57,20 +57,53 @@ main {
 }
 
 .pic-col {
-  margin-top: -18px;
   margin-left: -30px;
   margin: -18px 0 0 -30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .pic-col {
-    margin: -14px 0 0 0;
+    margin: -18px 0 0 0;
     padding: 0 0 0 0;
   }
 }
 
-
 .responsive-image {
   max-width: 100%;
   height: auto;
+}
+
+.responsive-textarea {
+  margin: -18px 0 0 -15px;
+  padding: 0 0 0 0;
+  background-color: #a9f5cc;
+}
+
+@media (max-width: 990px) {
+  .responsive-textarea {
+    margin: 0;
+    padding: 0;
+    background-color: #a9f5cc;
+  }
+}
+
+.FbText {
+  margin: 3% 0 0 3%;
+  padding: 0 0 0 0;
+}
+
+@media (max-width: 990px) {
+  .FbText {
+    font-size: 9rem;
+    margin: 10px 0 0 20px;
+    padding: 0 0 0 0;
+  }
+}
+
+#labelProduct {
+  color: #295ad6;
+}
+
+.banner {
+
 }
