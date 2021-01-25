@@ -1,8 +1,9 @@
 body,
 html {
   height: 100%;
+  padding: 0px;
+  margin: 0px;
 }
-
 
 .navbar {
   height: 62px;
@@ -26,17 +27,6 @@ a.navbar-brand {
   background-color: #fff;
 }
 
-#ipad
-{
-  overflow: hidden;
-  max-width: 20%;
-  height: auto;
-}
-
-#Greeting .row .col-md{
-    object-fit: contain;
-}
-
 .img-fluid {
   max-width: 25%;
   height: auto;
@@ -58,24 +48,21 @@ main {
     }
 }
 
-.container-fluid .img-fluid {
+.pic-col {
   margin-top: -18px;
-  margin-left: -16px;
-  width: auto !important; /*override the width below*/
-  width: 100%;
-  max-width: 1000px;
-  float: right;
-  clear: both;
+  margin-left: -30px;
+  margin: -18px 0 0 -30px;
 }
 
-@media (max-width: 978px) {
-  .container-fluid .img-fluid {
-    margin-top: -12px;
-    margin-left: auto;
-    margin-right: -15px;
-    display: block;
-    width: auto !important; /*override the width below*/
-    width: 100%;
-    max-width: 750px;
+@media (max-width: 768px) {
+  .pic-col {
+    margin: -14px 0 0 0;
+    padding: 0 0 0 0;
   }
+}
+
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
 }
