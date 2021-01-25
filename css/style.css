@@ -1,3 +1,9 @@
+body,
+html {
+  height: 100%;
+}
+
+
 .navbar {
   height: 62px;
   position: stick; /* Make it stick/fixed */
@@ -8,7 +14,7 @@
 }
 
 a.navbar-brand {
-  width: 320px;
+  width: 200px;
 }
 
 .collapse {
@@ -18,6 +24,17 @@ a.navbar-brand {
   padding-right: 1em;
   background-size: contain;
   background-color: #fff;
+}
+
+#ipad
+{
+  overflow: hidden;
+  max-width: 20%;
+  height: auto;
+}
+
+#Greeting .row .col-md{
+    object-fit: contain;
 }
 
 .img-fluid {
@@ -39,3 +56,26 @@ main {
       padding:0.5em;
       margin-bottom:1em;
     }
+}
+
+.container-fluid .img-fluid {
+  margin-top: -18px;
+  margin-left: -16px;
+  width: auto !important; /*override the width below*/
+  width: 100%;
+  max-width: 1000px;
+  float: right;
+  clear: both;
+}
+
+@media (max-width: 978px) {
+  .container-fluid .img-fluid {
+    margin-top: -12px;
+    margin-left: auto;
+    margin-right: -15px;
+    display: block;
+    width: auto !important; /*override the width below*/
+    width: 100%;
+    max-width: 750px;
+  }
+}

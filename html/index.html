@@ -2,15 +2,15 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <title>Онлайн-школа хуйчик</title>
+    <title>Онлайн-школа</title>
   </head>
   <body>
     <!-- NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbarScroller">
-        <a class="navbar-brand" href="#"><img class="img-fluid" src="../img/images.png" alt=""></a>
+        <a class="navbar-brand" href="#"><img class="img-fluid" src="../img/images.png" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -18,10 +18,10 @@
         <div class="collapse navbar-collapse navbar-light bg-light" id="navbarToggler">
           <ul class="navbar-nav mt-4 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Курсы <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#"><b>Курсы</b><span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Стоимость</a>
+              <a class="nav-link" href="#"><b>Стоимость</b></a>
             </li>
           </ul>
           <hr/>
@@ -44,44 +44,39 @@
               <div class="modal-body">
                 <form>
                   <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Ваша почта</label>
+                    <label for="recipient-name" class="col-form-label">Ваше имя</label>
                     <input type="text" class="form-control" id="recipient-name">
                   </div>
                   <div class="form-group">
-                    <label for="message-text" class="col-form-label">Номер телефона</label>
-                    <textarea class="form-control" id="message-text"></textarea>
+                    <label for="recipient-email" class="col-form-label">Ваша почта</label>
+                    <textarea class="form-control" id="recipient-email"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="recipient-phone" class="col-form-label">Номер телефона</label>
+                    <textarea class="form-control" id="recipient-phone"></textarea>
                   </div>
                 </form>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Send message</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                <button type="button" class="btn btn-primary">Отправить</button>
               </div>
             </div>
           </div>
         </div>
       <main>
-      <div class="container" id="Greeting">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis sed leo fringilla fermentum. Quisque eu mattis ipsum. Sed mollis pellentesque egestas. Etiam porta sem risus, id sollicitudin ipsum iaculis eget. Phasellus a posuere metus. Nulla a tellus fermentum, scelerisque mi vitae, eleifend velit. Maecenas fermentum eros et felis porttitor, ac ultricies nisl porttitor. Vestibulum blandit eu augue et elementum. Vestibulum sed ultricies lectus. Curabitur vulputate sagittis dui id porta.
-
-          Vestibulum sagittis elit eu euismod euismod. Sed metus tellus, maximus porttitor mauris ac, luctus dignissim elit. Fusce lacinia sed arcu ac luctus. Phasellus nibh ante, aliquam nec placerat eget, tempus ut diam. Curabitur convallis mauris pharetra nunc sodales ultricies a vitae quam. Pellentesque id nulla ut mauris posuere vulputate. Cras elementum condimentum aliquam. Aenean vel euismod lectus.
-
-          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin dignissim dui at orci ullamcorper, sit amet fermentum est varius. Fusce congue pharetra lectus non tempus. Vestibulum eleifend arcu felis, eu ornare ante iaculis at. Aenean elit justo, tempus eget nisi id, tincidunt facilisis dui. Suspendisse potenti. Integer a luctus lectus, sit amet viverra massa. Nulla pulvinar elementum justo, efficitur efficitur metus tincidunt eget. Maecenas ac posuere ex, sit amet condimentum nisl. Sed in massa felis. Vestibulum eu sem id enim convallis convallis vitae in sem. Nam rhoncus dolor vel quam convallis malesuada. Sed eu vulputate est, vel feugiat lorem. Cras sed arcu quis mauris mattis posuere vitae quis arcu. Cras at suscipit nisl.
-
-          Curabitur placerat semper eros posuere sagittis. Vivamus nulla lacus, pharetra non vestibulum quis, tempus placerat ante. Suspendisse dignissim posuere risus, quis ullamcorper libero feugiat a. Nulla sollicitudin eget libero quis dapibus. Nulla eu libero est. Sed condimentum ex nisl, vel hendrerit lectus sodales sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum sagittis nunc ac lectus laoreet vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-
-          Nullam lorem diam, pretium nec rutrum sit amet, vehicula sed eros. Suspendisse feugiat mollis diam, id sollicitudin diam viverra id. Aenean nisi augue, malesuada eget erat non, imperdiet efficitur sapien. Pellentesque fringilla dui ut cursus pretium. Pellentesque id erat congue, tempus leo ac, facilisis ex. Integer vitae erat eget nibh pharetra iaculis eu id leo. Maecenas vitae malesuada tortor. Phasellus sit amet nisl suscipit, scelerisque purus a, laoreet nunc.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis sed leo fringilla fermentum. Quisque eu mattis ipsum. Sed mollis pellentesque egestas. Etiam porta sem risus, id sollicitudin ipsum iaculis eget. Phasellus a posuere metus. Nulla a tellus fermentum, scelerisque mi vitae, eleifend velit. Maecenas fermentum eros et felis porttitor, ac ultricies nisl porttitor. Vestibulum blandit eu augue et elementum. Vestibulum sed ultricies lectus. Curabitur vulputate sagittis dui id porta.
-
-          Vestibulum sagittis elit eu euismod euismod. Sed metus tellus, maximus porttitor mauris ac, luctus dignissim elit. Fusce lacinia sed arcu ac luctus. Phasellus nibh ante, aliquam nec placerat eget, tempus ut diam. Curabitur convallis mauris pharetra nunc sodales ultricies a vitae quam. Pellentesque id nulla ut mauris posuere vulputate. Cras elementum condimentum aliquam. Aenean vel euismod lectus.
-
-          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin dignissim dui at orci ullamcorper, sit amet fermentum est varius. Fusce congue pharetra lectus non tempus. Vestibulum eleifend arcu felis, eu ornare ante iaculis at. Aenean elit justo, tempus eget nisi id, tincidunt facilisis dui. Suspendisse potenti. Integer a luctus lectus, sit amet viverra massa. Nulla pulvinar elementum justo, efficitur efficitur metus tincidunt eget. Maecenas ac posuere ex, sit amet condimentum nisl. Sed in massa felis. Vestibulum eu sem id enim convallis convallis vitae in sem. Nam rhoncus dolor vel quam convallis malesuada. Sed eu vulputate est, vel feugiat lorem. Cras sed arcu quis mauris mattis posuere vitae quis arcu. Cras at suscipit nisl.
-
-          Curabitur placerat semper eros posuere sagittis. Vivamus nulla lacus, pharetra non vestibulum quis, tempus placerat ante. Suspendisse dignissim posuere risus, quis ullamcorper libero feugiat a. Nulla sollicitudin eget libero quis dapibus. Nulla eu libero est. Sed condimentum ex nisl, vel hendrerit lectus sodales sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum sagittis nunc ac lectus laoreet vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-
-          Nullam lorem diam, pretium nec rutrum sit amet, vehicula sed eros. Suspendisse feugiat mollis diam, id sollicitudin diam viverra id. Aenean nisi augue, malesuada eget erat non, imperdiet efficitur sapien. Pellentesque fringilla dui ut cursus pretium. Pellentesque id erat congue, tempus leo ac, facilisis ex. Integer vitae erat eget nibh pharetra iaculis eu id leo. Maecenas vitae malesuada tortor. Phasellus sit amet nisl suscipit, scelerisque purus a, laoreet nunc.
-      </div>
-
+      <section>
+        <div class="container-fluid" id="Greeting">
+          <div class="row">
+            <div class="col-md col-xs-12"><img class="img-fluid" id="#ipad" src="../img/ipad-scratch.jpg" alt=""></div>
+            <div class="col-md col-xs-12">
+              <h1>Онлайн-школа программирования</h1>
+              <h3>Название</h3>
+              <p>Обучение детей от 7 лет</p>
+            </div>
+          </div>
+        </div>
+    </section>
     </main>
 
     <!-- Scripts -->
