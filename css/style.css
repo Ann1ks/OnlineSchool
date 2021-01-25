@@ -44,11 +44,6 @@ main {
   padding-top: 5em;
 }
 
-.navbarToggler {
-  width: 100%;
-}
-
-
 @media (max-width: 978px) {
     .btn-outline-info {
       padding:0.5em;
@@ -70,6 +65,8 @@ main {
 
 .responsive-image {
   max-width: 100%;
+  min-width: 593px;
+  min-height: 294px;
   height: auto;
 }
 
