@@ -14,8 +14,16 @@ html {
   background-color: #d6d6d6;
 }
 
-a.navbar-brand {
-  width: 200px;
+@media (max-width: 500px) {
+  a.navbar-brand {
+    width: 200px;
+  }
+}
+
+@media (max-width: 315px) {
+  a.navbar-brand {
+    width: 100px;
+  }
 }
 
 .collapse {
