@@ -5,13 +5,39 @@ html {
   margin: 0px;
 }
 
+.bg-img {
+  background-image: url("../img/ipad-scratch-shadow.jpg");
+  background-color: #cccccc;
+  height: 100%;
+  top: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 .navbar {
-  height: 62px;
   position: stick; /* Make it stick/fixed */
+  padding: 0rem 1rem;
   top: 0; /* Stay on top */
   width: 100%; /* Full width */
-  transition: top 0.3s; /* Transition effect when sliding down (and up) */
-  background-color: #d6d6d6;
+  transition: background .7s ease;
+  background-color: transparent;
+}
+
+#navbarToggler{
+  background-color: transparent;
+  transition: background .7s ease;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    position: stick; /* Make it stick/fixed */
+    padding: 0.5rem 1rem;
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    background-color: #d6d6d6;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -51,56 +77,34 @@ main {
     }
 }
 
-.pic-col {
-  margin-left: -30px;
-  margin: -18px 0 0 -30px;
+.scrolling-active{
+    background-color: #fff;
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+    transition: .7s;
 }
 
-@media (max-width: 990px) {
-  .pic-col {
-    margin: -18px 0 0 0;
-    padding: 0 0 0 0;
-  }
+.scrolling-active .navbar{
+    height: 6.6rem;
+    transition: .7s;
 }
 
-.responsive-image {
-  max-width: 100%;
-  min-width: 593px;
-  min-height: 294px;
-  height: auto;
+.scrolling-active .navbar a{
+    color: #fff ;
+    transition: .7s;
 }
 
-.responsive-textarea {
-  margin: -18px 0 0 -15px;
-  padding: 0 0 0 0;
-  background-color: #a9f5cc;
+.scrolling-active #nav-cta{
+    background-color: ##fff;
+    color: #fff;
+    transition: .7s;
 }
 
-@media (max-width: 990px) {
-  .responsive-textarea {
-    margin: 0;
-    padding: 0;
-    background-color: #a9f5cc;
-  }
+.scrolling-active #nav-cta:hover{
+    background-color: #151515;
+    transition: .7s;
 }
 
-.FbText {
-  margin: 3% 0 0 3%;
-  padding: 0 0 0 0;
-}
-
-@media (max-width: 990px) {
-  .FbText {
-    font-size: 9rem;
-    margin: 10px 0 0 20px;
-    padding: 0 0 0 0;
-  }
-}
-
-#labelProduct {
-  color: #295ad6;
-}
-
-.banner {
-
+.scrolling-active .navbar-link::after{
+    background-color: #313131;
+    transition: .7s;
 }
