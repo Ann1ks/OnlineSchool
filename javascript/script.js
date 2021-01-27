@@ -1,9 +1,13 @@
-window.addEventListener('scroll', function () {
-            let header = document.querySelector('nav');
-            let windowPosition = window.scrollY > 0;
-            header.classList.toggle('scrolling-active', windowPosition);
-        });
-
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbarScroller").style.top = "0px";
+  } else {
+    document.getElementById("navbarScroller").style.top = "-250px";
+  }
+  prevScrollpos = currentScrollPos;
+}//скроллинг навбара
 
 $('#myModal').on('shown.bs.modal', function () {
   $('#myInput').trigger('focus')

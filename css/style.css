@@ -5,7 +5,7 @@ html {
   margin: 0px;
 }
 
-.bg-img {
+.hero {
   background-image: url("../img/ipad-scratch-shadow.jpg");
   background-color: #cccccc;
   height: 100%;
@@ -15,19 +15,24 @@ html {
   background-size: cover;
   position: relative;
 }
+.hero-text {
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(189, 189, 189,.7);
+  padding: 0 1rem;
+}
 
 .navbar {
   position: stick; /* Make it stick/fixed */
   padding: 0rem 1rem;
   top: 0; /* Stay on top */
   width: 100%; /* Full width */
-  transition: background .7s ease;
-  background-color: transparent;
-}
-
-#navbarToggler{
-  background-color: transparent;
-  transition: background .7s ease;
+  transition: .7s;
 }
 
 @media (max-width: 1024px) {
@@ -36,8 +41,30 @@ html {
     padding: 0.5rem 1rem;
     top: 0; /* Stay on top */
     width: 100%; /* Full width */
-    background-color: #d6d6d6;
+    background-color: #fff;
   }
+}
+.collapse a {
+    transition: all 0.1s;
+}
+
+.collapse a::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transform: translateY(14px) scale(0) ;
+  transition: all .3s;
+}
+
+.collapse a:hover::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transform: translateY(14px) scale(1) ;
 }
 
 @media (max-width: 1024px) {
@@ -75,36 +102,4 @@ main {
       padding:0.5em;
       margin-bottom:1em;
     }
-}
-
-.scrolling-active{
-    background-color: #fff;
-    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
-    transition: .7s;
-}
-
-.scrolling-active .navbar{
-    height: 6.6rem;
-    transition: .7s;
-}
-
-.scrolling-active .navbar a{
-    color: #fff ;
-    transition: .7s;
-}
-
-.scrolling-active #nav-cta{
-    background-color: ##fff;
-    color: #fff;
-    transition: .7s;
-}
-
-.scrolling-active #nav-cta:hover{
-    background-color: #151515;
-    transition: .7s;
-}
-
-.scrolling-active .navbar-link::after{
-    background-color: #313131;
-    transition: .7s;
 }
