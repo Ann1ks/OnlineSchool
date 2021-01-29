@@ -5,6 +5,22 @@ html {
   margin: 0px;
 }
 
+a img {
+  margin-right: 0.5rem;
+}
+
+#icons a{
+  display: inline-block;
+  list-style: none;
+}
+
+@media (max-width: 991px){
+  #icons a{
+    display: none;
+    list-style: none;
+  }
+}
+
 .hero {
   background-image: url("../img/ipad-scratch-shadow.jpg");
   background-color: #cccccc;
@@ -16,7 +32,7 @@ html {
   position: relative;
 }
 .hero-text {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Commissioner', sans-serif;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -44,28 +60,42 @@ html {
     background-color: #fff;
   }
 }
-.collapse a {
+
+.collapse .nav-link {
     transition: all 0.1s;
 }
 
-.collapse a::after {
-  display: block;
-  content: '';
-  width: 100%;
-  height: 2px;
-  background-color: #000;
-  transform: translateY(14px) scale(0) ;
-  transition: all .3s;
+.nav-link::selection {
+    color: #ff0; /* Цвет текста */
+    background: #000;
+}
+@media (min-width: 990px) {
+  .collapse .nav-link::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform: translateY(16px) scale(0) ;
+    transition: all .3s;
+  }
+
+  .collapse .nav-link:hover::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform: translateY(16px) scale(1) ;
+  }
+}
+@media (max-width: 991px) {
+  .nav-item{
+    margin-top: 0em;
+    margin-left: -3em;
+  }
 }
 
-.collapse a:hover::after {
-  display: block;
-  content: '';
-  width: 100%;
-  height: 2px;
-  background-color: #000;
-  transform: translateY(14px) scale(1) ;
-}
 
 @media (max-width: 1024px) {
   a.navbar-brand {
