@@ -5,9 +5,11 @@ html {
   margin: 0px;
 }
 
+
 a img {
   margin-right: 0.5rem;
 }
+
 
 #icons a{
   display: inline-block;
@@ -26,6 +28,7 @@ a img {
 }
 
 .hero {
+  position: relative;
   background-image: url("../img/ipad-scratch-shadow.jpg");
   background-color: #cccccc;
   height: 70%;
@@ -33,10 +36,10 @@ a img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
   animation-name: bg-fadein;
   animation-duration: 700ms;
 }
+
 .hero-text {
   font-family: 'Commissioner', sans-serif;
   text-align: center;
@@ -76,6 +79,7 @@ a img {
     color: #ff0; /* Цвет текста */
     background: #000;
 }
+
 @media (min-width: 990px) {
   .collapse .nav-link::after {
     display: block;
@@ -86,6 +90,7 @@ a img {
     transform: translateY(16px) scale(0) ;
     transition: all .3s;
   }
+}
 
   .collapse .nav-link:hover::after {
     display: block;
@@ -95,7 +100,7 @@ a img {
     background-color: #000;
     transform: translateY(16px) scale(1) ;
   }
-}
+
 @media (max-width: 991px) {
   .nav-item{
     margin-top: 0em;
@@ -132,6 +137,7 @@ a img {
 
 main {
   padding-top: 5em;
+  position: absolute;
 }
 
 @media (max-width: 978px) {
@@ -141,9 +147,25 @@ main {
     }
 }
 
+.container {
+  margin-top: 2em;
+  animation-name: attention-fadeout;
+  animation-duration: 2s;
+}
+
+
+@keyframes attention-fadeout{
+  0%{
+    opacity:0%;
+  }
+  100%{
+    opacity:120%;
+  }
+}
+
 @keyframes bg-fadein{
   0%{
-    height:0%;
+    height: 0%;
   }
   100%{
     height: 70%;

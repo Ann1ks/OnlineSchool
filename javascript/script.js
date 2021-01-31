@@ -23,7 +23,6 @@ var typed = new Typed('.banner', {
     startDelay: 1000,
     fadeIn: true,
     cursorChar: '_',
-    shuffle: true,
     smartBackspace: false,
     loop: true
   });
