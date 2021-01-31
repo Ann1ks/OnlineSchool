@@ -21,15 +21,21 @@ a img {
   }
 }
 
+.navbar-brand {
+  font-family: 'Press Start 2P', cursive;
+}
+
 .hero {
   background-image: url("../img/ipad-scratch-shadow.jpg");
   background-color: #cccccc;
-  height: 100%;
+  height: 70%;
   top: 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  animation-name: bg-fadein;
+  animation-duration: 700ms;
 }
 .hero-text {
   font-family: 'Commissioner', sans-serif;
@@ -49,6 +55,7 @@ a img {
   top: 0; /* Stay on top */
   width: 100%; /* Full width */
   transition: .7s;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 @media (max-width: 1024px) {
@@ -132,4 +139,13 @@ main {
       padding:0.5em;
       margin-bottom:1em;
     }
+}
+
+@keyframes bg-fadein{
+  0%{
+    height:0%;
+  }
+  100%{
+    height: 70%;
+  }
 }
